@@ -17,11 +17,11 @@ return [
         // class name.
         'invokables' => [
             // Fully\Qualified\InterfaceName::class => Fully\Qualified\ClassName::class,
-            App\Post\Get::class => App\Post\Get::class,
         ],
         // Use 'factories' for services provided by callbacks/factory classes.
         'factories'  => [
             // Fully\Qualified\ClassName::class => Fully\Qualified\FactoryName::class,
+            App\Post\Get::class => App\Post\Factory::class,
         ],
     ],
 ];

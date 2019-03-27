@@ -10,24 +10,19 @@ use Zend\Diactoros\Response\JsonResponse;
 
 class Get implements MiddlewareInterface
 {
+    private $tableGateway;
+
+    public function __construct($tableGateway)
+    {
+        $this->tableGateway = $tableGateway;
+    }
+
     public function process(
         ServerRequestInterface $request,
         RequestHandlerInterface $handler) : ResponseInterface
     {
-        $content = [
-            [
-                'author' => 'Kelsi Monahan',
-                'title' => 'Qui occaecati vero et quibusdam non',
-                'content' => 'saepe quia culpa',
-                'posted_at' => '2018/06/01'
-            ],
-            [
-                'author' => 'Mrs. Alexanne Schneider',
-                'title' => 'Architecto quos rem unde quia accusantium',
-                'content' => 'Voluptaum omnis et dolor',
-                'posted_at' => '2018/06/01'
-            ],
-        ];
+        $content = $this->tableGateway->select()->toArray();
+
         return new JsonResponse($content);
 
     }
