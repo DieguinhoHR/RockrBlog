@@ -2,6 +2,7 @@
 
 namespace App\Post;
 
+use PHPUnit\Runner\Exception;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -10,6 +11,8 @@ use Zend\Diactoros\Response\JsonResponse;
 
 class Get implements MiddlewareInterface
 {
+    const NOT_FOUND = 404;
+
     private $tableGateway;
 
     public function __construct($tableGateway)
@@ -21,7 +24,12 @@ class Get implements MiddlewareInterface
         ServerRequestInterface $request,
         RequestHandlerInterface $handler) : ResponseInterface
     {
-        $content = $this->tableGateway->select()->toArray();
+        $id = $request->getAttribute('id_post');
+        $content = $this->tableGateway->select(['id' => $id])->toArray();
+
+        if (count($content) == 0) {
+            throw new Exception('Not found', self::NOT_FOUND);
+        }
 
         return new JsonResponse($content);
 
