@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import CardActionArea from '@material-ui/core/CardActionArea'
 import Card from '@material-ui/core/Card'
@@ -9,15 +9,13 @@ import GridContainer from '../../common/grid-container'
 import Grid from '@material-ui/core/Grid'
 
 const Container = styled.div`
-  padding-top: 50px;
+  padding-top: 60px;
 `
 
 function Main (classes) {
-  const spacing = useState(40)
-
   return (
     <Container>
-      <Grid container direction='row' alignItems='center' spacing={spacing}>
+      <Grid container direction='row'>
         <Grid item xs={6}>
           <Card className={classes.card}>
             <CardActionArea>
