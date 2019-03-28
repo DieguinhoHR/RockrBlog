@@ -19,7 +19,7 @@ import GridContainerWithAnImage from '../../common/grid-container-with-an-image'
 import Grid from '@material-ui/core/Grid'
 
 const Container = styled.div`
-  padding-top: 60px;
+  padding-top: 70px;
 `
 
 function Main (classes) {
@@ -96,93 +96,93 @@ function Main (classes) {
             </CardActionArea>
           </Card>
         </Grid>
+      </Grid>
 
-        <Grid container direction='row' style={{ paddingBottom: '70px' }}>
-          <Grid item xs={8}>
-            <Card className={classes.card}>
-              <CardActionArea>
-                <GridContainerWithAnImage
-                  image={sepultura}
-                  title='Sydney Legros'
-                  subtitle1='Possimus saepe et illum molestiae et quibusdam'
-                  subtitle2='Excepturi quod aliquid impedit earum consequatur eos. In quo fuga ad odio beatae'
-                />
-              </CardActionArea>
-            </Card>
-          </Grid>
+      <Grid container direction='row' style={{ paddingBottom: '70px' }}>
+        <Grid item xs={8}>
+          <Card className={classes.card}>
+            <CardActionArea>
+              <GridContainerWithAnImage
+                image={sepultura}
+                title='Sydney Legros'
+                subtitle1='Possimus saepe et illum molestiae et quibusdam'
+                subtitle2='Excepturi quod aliquid impedit earum consequatur eos. In quo fuga ad odio beatae'
+              />
+            </CardActionArea>
+          </Card>
+        </Grid>
+      </Grid>
+
+      <Grid container direction='row' style={{ paddingBottom: '70px' }}>
+        <Grid item xs={6}>
+          <Card className={classes.card}>
+            <CardActionArea>
+              <GridContainer
+                image={projota}
+                title='Kelsi Monahan'
+                subtitle1='Qui occaecati vero et quibusdam non'
+                subtitle2='Saepe quia culpa vero.'
+              />
+            </CardActionArea>
+          </Card>
         </Grid>
 
-        <Grid container direction='row' style={{ paddingBottom: '70px' }}>
-          <Grid item xs={6}>
-            <Card className={classes.card}>
-              <CardActionArea>
-                <GridContainer
-                  image={projota}
-                  title='Kelsi Monahan'
-                  subtitle1='Qui occaecati vero et quibusdam non'
-                  subtitle2='Saepe quia culpa vero.'
-                />
-              </CardActionArea>
-            </Card>
-          </Grid>
+        <Grid item xs={6}>
+          <Card className={classes.card}>
+            <CardActionArea>
+              <GridContainer
+                image={slipknot}
+                title='Mrs. Alexanne Schneider'
+                subtitle1='Architecto quos rem unde quia accusantium'
+                subtitle2='Voluptatum'
+              />
+            </CardActionArea>
+          </Card>
+        </Grid>
+      </Grid>
 
-          <Grid item xs={6}>
-            <Card className={classes.card}>
-              <CardActionArea>
-                <GridContainer
-                  image={slipknot}
-                  title='Mrs. Alexanne Schneider'
-                  subtitle1='Architecto quos rem unde quia accusantium'
-                  subtitle2='Voluptatum'
-                />
-              </CardActionArea>
-            </Card>
-          </Grid>
+      <Grid container direction='row-reverse' style={{ paddingBottom: '70px' }}>
+        <Grid item xs={8}>
+          <Card className={classes.card}>
+            <CardActionArea>
+              <GridContainerWithAnImage
+                image={disturbed}
+                title='Sydney Legros'
+                subtitle1='Possimus saepe et illum molestiae et quibusdam'
+                subtitle2='Excepturi quod aliquid impedit earum consequatur eos. In quo fuga ad odio beatae'
+              />
+            </CardActionArea>
+          </Card>
+        </Grid>
+      </Grid>
+
+      <Grid container direction='row'>
+        <Grid item xs={6}>
+          <Card className={classes.card}>
+            <CardActionArea>
+              <GridContainer
+                image={tavares}
+                imageRightPosition
+                title='Kelsi Monahan'
+                subtitle1='Qui occaecati vero et quibusdam non'
+                subtitle2='Saepe quia culpa vero. Velit numquam corporis nihil sint enim exercitationem. Rem nulla illum sint et id dolore voluptas'
+              />
+            </CardActionArea>
+          </Card>
         </Grid>
 
-        <Grid container direction='row-reverse' style={{ paddingBottom: '70px' }}>
-          <Grid item xs={8}>
-            <Card className={classes.card}>
-              <CardActionArea>
-                <GridContainerWithAnImage
-                  image={disturbed}
-                  title='Sydney Legros'
-                  subtitle1='Possimus saepe et illum molestiae et quibusdam'
-                  subtitle2='Excepturi quod aliquid impedit earum consequatur eos. In quo fuga ad odio beatae'
-                />
-              </CardActionArea>
-            </Card>
-          </Grid>
-        </Grid>
-
-        <Grid container direction='row'>
-          <Grid item xs={6}>
-            <Card className={classes.card}>
-              <CardActionArea>
-                <GridContainer
-                  image={tavares}
-                  imageRightPosition
-                  title='Kelsi Monahan'
-                  subtitle1='Qui occaecati vero et quibusdam non'
-                  subtitle2='Saepe quia culpa vero. Velit numquam corporis nihil sint enim exercitationem. Rem nulla illum sint et id dolore voluptas'
-                />
-              </CardActionArea>
-            </Card>
-          </Grid>
-
-          <Grid item xs={6}>
-            <Card className={classes.card}>
-              <CardActionArea>
-                <GridContainer
-                  image={orappa}
-                  imageRightPosition
-                  title='Mrs. Alexanne Schneider'
-                  subtitle1='Architecto quos rem unde quia accusantium'
-                  subtitle2='Voluptatum omnis et dolor architecto non totam'
-                />
-              </CardActionArea>
-            </Card>
-          </Grid>
+        <Grid item xs={6}>
+          <Card className={classes.card}>
+            <CardActionArea>
+              <GridContainer
+                image={orappa}
+                imageRightPosition
+                title='Mrs. Alexanne Schneider'
+                subtitle1='Architecto quos rem unde quia accusantium'
+                subtitle2='Voluptatum omnis et dolor architecto non totam'
+              />
+            </CardActionArea>
+          </Card>
         </Grid>
       </Grid>
     </Container>
