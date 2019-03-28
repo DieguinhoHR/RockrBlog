@@ -7,18 +7,22 @@ import {
 import { MainPage } from 'pages/main'
 import { Contact } from 'pages/contact'
 import { CssBaseline } from '@material-ui/core'
+import Nav from 'pages/templates/nav'
 
-const App = () => (
-  <>
-    <CssBaseline>
-      <BrowserRouter>
-        <Switch>
-          <Route path='/' component={MainPage} exact />
-          <Route path='/contact' component={Contact} />
-        </Switch>
-      </BrowserRouter>
-    </CssBaseline>
-  </>
-)
+function App () {
+  return (
+    <>
+      <CssBaseline>
+        <BrowserRouter>
+          <Nav />
+          <Switch>
+            <Route path='/' component={MainPage} exact />
+            <Route path='/contact' component={Contact} />
+          </Switch>
+        </BrowserRouter>
+      </CssBaseline>
+    </>
+  )
+}
 
 export default App
