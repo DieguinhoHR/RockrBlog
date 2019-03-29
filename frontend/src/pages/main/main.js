@@ -19,7 +19,10 @@ import GridContainerWithAnImage from '../../common/grid-container-with-an-image'
 import Grid from '@material-ui/core/Grid'
 import PropTypes from 'prop-types'
 
+import { Link } from 'react-router-dom'
+
 import api from '../../services/api'
+import Tooltip from '@material-ui/core/Tooltip'
 
 import {
   withStyles
@@ -69,12 +72,16 @@ class Main extends Component {
                   <Grid item xs={6}>
                     <Card className={classes.card}>
                       <CardActionArea>
-                        <GridContainer
-                          image={response.photo === 'offspring' ? offspring : projota}
-                          title={response.author}
-                          subtitle1={response.title}
-                          subtitle2={response.content}
-                        />
+                        <Tooltip title='Clique na descrição para visualizar este post' placement='top'>
+                          <Link to={`/post/${response.id}`} style={{ textDecoration: 'none' }}>
+                            <GridContainer
+                              image={response.photo === 'offspring' ? offspring : projota}
+                              title={response.author}
+                              subtitle1={response.title}
+                              subtitle2={response.content}
+                            />
+                          </Link>
+                        </Tooltip>
                       </CardActionArea>
                     </Card>
                   </Grid>
@@ -94,12 +101,16 @@ class Main extends Component {
                   <Grid item xs={8}>
                     <Card className={classes.card}>
                       <CardActionArea>
-                        <GridContainerWithAnImage
-                          image={charlieBrow}
-                          title={response.author}
-                          subtitle1={response.title}
-                          subtitle2={response.content}
-                        />
+                        <Tooltip title='Clique na descrição para visualizar este post' placement='right'>
+                          <Link to={`/post/${response.id}`} style={{ textDecoration: 'none' }}>
+                            <GridContainerWithAnImage
+                              image={charlieBrow}
+                              title={response.author}
+                              subtitle1={response.title}
+                              subtitle2={response.content}
+                            />
+                          </Link>
+                        </Tooltip>
                       </CardActionArea>
                     </Card>
                   </Grid>
@@ -118,13 +129,17 @@ class Main extends Component {
                   <Grid item xs={6}>
                     <Card className={classes.card}>
                       <CardActionArea>
-                        <GridContainer
-                          image={response.photo === 'cpm22' ? cpm22 : skank}
-                          imageRightPosition
-                          title={response.author}
-                          subtitle1={response.title}
-                          subtitle2={response.content}
-                        />
+                        <Tooltip title='Clique na descrição para visualizar este post' placement='top'>
+                          <Link to={`/post/${response.id}`} style={{ textDecoration: 'none' }}>
+                            <GridContainer
+                              image={response.photo === 'cpm22' ? cpm22 : skank}
+                              imageRightPosition
+                              title={response.author}
+                              subtitle1={response.title}
+                              subtitle2={response.content}
+                            />
+                          </Link>
+                        </Tooltip>
                       </CardActionArea>
                     </Card>
                   </Grid>
@@ -144,12 +159,16 @@ class Main extends Component {
                   <Grid item xs={8}>
                     <Card className={classes.card}>
                       <CardActionArea>
-                        <GridContainerWithAnImage
-                          image={sepultura}
-                          title={response.author}
-                          subtitle1={response.title}
-                          subtitle2={response.content}
-                        />
+                        <Tooltip title='Clique na descrição para visualizar este post' placement='left'>
+                          <Link to={`/post/${response.id}`} style={{ textDecoration: 'none' }}>
+                            <GridContainerWithAnImage
+                              image={sepultura}
+                              title={response.author}
+                              subtitle1={response.title}
+                              subtitle2={response.content}
+                            />
+                          </Link>
+                        </Tooltip>
                       </CardActionArea>
                     </Card>
                   </Grid>
@@ -168,12 +187,16 @@ class Main extends Component {
                   <Grid item xs={6}>
                     <Card className={classes.card}>
                       <CardActionArea>
-                        <GridContainer
-                          image={response.photo === 'projota' ? projota : slipknot}
-                          title={response.author}
-                          subtitle1={response.title}
-                          subtitle2={response.content}
-                        />
+                        <Tooltip title='Clique na descrição para visualizar este post' placement='top'>
+                          <Link to={`/post/${response.id}`} style={{ textDecoration: 'none' }}>
+                            <GridContainer
+                              image={response.photo === 'projota' ? projota : slipknot}
+                              title={response.author}
+                              subtitle1={response.title}
+                              subtitle2={response.content}
+                            />
+                          </Link>
+                        </Tooltip>
                       </CardActionArea>
                     </Card>
                   </Grid>
@@ -193,12 +216,16 @@ class Main extends Component {
                   <Grid item xs={8}>
                     <Card className={classes.card}>
                       <CardActionArea>
-                        <GridContainerWithAnImage
-                          image={disturbed}
-                          title={response.author}
-                          subtitle1={response.title}
-                          subtitle2={response.content}
-                        />
+                        <Tooltip title='Clique na descrição para visualizar este post' placement='right'>
+                          <Link to={`/post/${response.id}`} style={{ textDecoration: 'none' }}>
+                            <GridContainerWithAnImage
+                              image={disturbed}
+                              title={response.author}
+                              subtitle1={response.title}
+                              subtitle2={response.content}
+                            />
+                          </Link>
+                        </Tooltip>
                       </CardActionArea>
                     </Card>
                   </Grid>
@@ -217,13 +244,17 @@ class Main extends Component {
                   <Grid item xs={6}>
                     <Card className={classes.card}>
                       <CardActionArea>
-                        <GridContainer
-                          image={response.photo === 'tavares' ? tavares : orappa}
-                          imageRightPosition
-                          title={response.author}
-                          subtitle1={response.title}
-                          subtitle2={response.content}
-                        />
+                        <Tooltip title='Clique na descrição para visualizar este post' placement='top'>
+                          <Link to={`/post/${response.id}`} style={{ textDecoration: 'none' }}>
+                            <GridContainer
+                              image={response.photo === 'tavares' ? tavares : orappa}
+                              imageRightPosition
+                              title={response.author}
+                              subtitle1={response.title}
+                              subtitle2={response.content}
+                            />
+                          </Link>
+                        </Tooltip>
                       </CardActionArea>
                     </Card>
                   </Grid>

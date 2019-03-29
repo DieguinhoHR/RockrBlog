@@ -6,6 +6,8 @@ import {
 } from 'react-router-dom'
 import { MainPage } from 'pages/main'
 import { Contact } from 'pages/contact'
+import { Post } from 'pages/post'
+
 import { CssBaseline } from '@material-ui/core'
 import Nav from 'pages/templates/nav'
 
@@ -18,6 +20,7 @@ function App () {
           <Switch>
             <Route path='/' component={MainPage} exact />
             <Route path='/contact' component={Contact} />
+            <Route path='/post/:post_id' component={Post} />
           </Switch>
         </BrowserRouter>
       </CssBaseline>

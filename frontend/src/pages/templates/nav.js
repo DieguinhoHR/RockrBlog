@@ -4,6 +4,9 @@ import { withStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
+import { Link } from 'react-router-dom'
+
+import Tooltip from '@material-ui/core/Tooltip'
 
 const styles = {
   root: {
@@ -64,13 +67,19 @@ function ButtonAppBar (props) {
         <Typography>
           <Grid container spacing={40}>
             <Grid item xs={4} style={logo}>
-              Rockr Blog
+              <Tooltip title='Clique para visualizar todos posts' placement='bottom'>
+                <Link to='/' style={{ color: 'white', textDecoration: 'none' }}>Rockr Blog</Link>
+              </Tooltip>
             </Grid>
             <Grid item xs={4} style={postLink}>
-              Posts
+              <Tooltip title='Clique para visualizar todos posts' placement='bottom'>
+                <Link to='/' style={{ color: 'white', textDecoration: 'none' }}>Posts</Link>
+              </Tooltip>
             </Grid>
             <Grid item xs={4} style={contactLink}>
-              Contact
+              <Tooltip title='Clique para inserir um novo contato' placement='bottom'>
+                <Link to='/contact' style={{ color: 'white', textDecoration: 'none' }}>Contact</Link>
+              </Tooltip>
             </Grid>
           </Grid>
         </Typography>
