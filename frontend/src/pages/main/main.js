@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import CardActionArea from '@material-ui/core/CardActionArea'
 import Card from '@material-ui/core/Card'
@@ -18,11 +18,24 @@ import GridContainer from '../../common/grid-container'
 import GridContainerWithAnImage from '../../common/grid-container-with-an-image'
 import Grid from '@material-ui/core/Grid'
 
+import api from '../../services/api'
+
 const Container = styled.div`
   padding-top: 70px;
 `
 
+// const initialState = {
+//   posts: []
+// }
+
 function Main (classes) {
+  // const posts = useState([])
+
+  useEffect(() => {
+    api.get('http://localhost:81/v1/posts')
+      .then(response => console.log(response))
+  })
+
   return (
     <Container>
       <Grid container direction='row' style={{ paddingBottom: '70px' }}>

@@ -6,6 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Zend\\Stdlib\\' => array($vendorDir . '/zendframework/zend-stdlib/src'),
-    'Zend\\Db\\' => array($vendorDir . '/zendframework/zend-db/src'),
+    'Tuupola\\Middleware\\' => array($vendorDir . '/tuupola/callable-handler/src', $vendorDir . '/tuupola/cors-middleware/src'),
+    'Tuupola\\Http\\Factory\\' => array($vendorDir . '/tuupola/http-factory/src'),
+    'Tuupola\\' => array($vendorDir . '/tuupola/base62/src'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
+    'Psr\\Http\\Server\\' => array($vendorDir . '/psr/http-server-handler/src', $vendorDir . '/psr/http-server-middleware/src'),
+    'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-factory/src', $vendorDir . '/psr/http-message/src'),
+    'Neomerx\\Cors\\' => array($vendorDir . '/neomerx/cors-psr7/src'),
 );

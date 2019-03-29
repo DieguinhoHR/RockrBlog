@@ -14,6 +14,9 @@ use Zend\Expressive\Router\Middleware\ImplicitOptionsMiddleware;
 use Zend\Expressive\Router\Middleware\MethodNotAllowedMiddleware;
 use Zend\Expressive\Router\Middleware\RouteMiddleware;
 use Zend\Stratigility\Middleware\ErrorHandler;
+use Tuupola\Middleware\CorsMiddleware;
+use Zend\Expressive\Router\RouteResult;
+
 
 /**
  * Setup middleware pipeline:
@@ -54,7 +57,16 @@ return function (Application $app, MiddlewareFactory $factory, ContainerInterfac
     // Order here matters; the MethodNotAllowedMiddleware should be placed
     // after the Implicit*Middleware.
     $app->pipe(ImplicitHeadMiddleware::class);
-    $app->pipe(ImplicitOptionsMiddleware::class);
+    // $app->pipe(ImplicitOptionsMiddleware::class);
+    //$app->pipe(CorsMiddleware::class);
+    $app->pipe(new CorsMiddleware([
+        "origin" => ["*"],
+        "methods" => function($request) {
+            $result = $request->getAttribute(RouteResult::class);
+            $route = $result->getMatchedRoute();
+            return $route->getAllowedMethods();
+        }
+    ]));
     $app->pipe(MethodNotAllowedMiddleware::class);
 
     // Seed the UrlHelper with the routing results:
