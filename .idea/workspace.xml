@@ -88,8 +88,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="182">
-                <caret line="7" column="94" lean-forward="false" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
+              <first_editor relative-caret-position="707">
+                <caret line="31" column="58" lean-forward="false" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -366,12 +366,12 @@
       <updated>1553647601708</updated>
       <workItem from="1553647607104" duration="21803000" />
       <workItem from="1553718271006" duration="63000" />
-      <workItem from="1553823902470" duration="25714000" />
+      <workItem from="1553823902470" duration="26014000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47580000" />
+    <option name="totallyTimeSpent" value="47880000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -738,8 +738,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="182">
-            <caret line="7" column="94" lean-forward="false" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
+          <first_editor relative-caret-position="707">
+            <caret line="31" column="58" lean-forward="false" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
             <folding />
           </first_editor>
           <second_editor />
