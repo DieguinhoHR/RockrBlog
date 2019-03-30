@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="155723be-76cd-4aa0-8c1b-4d245d6cef39" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/ib_logfile0" afterPath="$PROJECT_DIR$/db/ib_logfile0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/ibdata1" afterPath="$PROJECT_DIR$/db/ibdata1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/ibtmp1" afterPath="$PROJECT_DIR$/db/ibtmp1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/mysql/innodb_index_stats.ibd" afterPath="$PROJECT_DIR$/db/mysql/innodb_index_stats.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/mysql/innodb_table_stats.ibd" afterPath="$PROJECT_DIR$/db/mysql/innodb_table_stats.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/rockrblog/contact.ibd" afterPath="$PROJECT_DIR$/db/rockrblog/contact.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/rockrblog/post.frm" afterPath="$PROJECT_DIR$/db/rockrblog/post.frm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/rockrblog/post.ibd" afterPath="$PROJECT_DIR$/db/rockrblog/post.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/config/pipeline.php" afterPath="$PROJECT_DIR$/backend/config/pipeline.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/App/src/Contact/Store.php" afterPath="$PROJECT_DIR$/backend/src/App/src/Contact/Store.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/package.json" afterPath="$PROJECT_DIR$/frontend/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/public/index.html" afterPath="$PROJECT_DIR$/frontend/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/pages/contact/contact.js" afterPath="$PROJECT_DIR$/frontend/src/pages/contact/contact.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/pages/templates/nav.js" afterPath="$PROJECT_DIR$/frontend/src/pages/templates/nav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/yarn.lock" afterPath="$PROJECT_DIR$/frontend/yarn.lock" />
-    </list>
+    <list default="true" id="155723be-76cd-4aa0-8c1b-4d245d6cef39" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pipeline.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pipeline.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/config/pipeline.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
@@ -49,6 +32,16 @@
               <folding>
                 <element signature="e#33#70#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -423,12 +416,12 @@
       <updated>1553647601708</updated>
       <workItem from="1553647607104" duration="21803000" />
       <workItem from="1553718271006" duration="63000" />
-      <workItem from="1553823902470" duration="23853000" />
+      <workItem from="1553823902470" duration="24485000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45719000" />
+    <option name="totallyTimeSpent" value="46351000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -604,14 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/App/src/Handler/HomePageHandler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2006">
@@ -759,6 +744,14 @@
           <folding>
             <element signature="e#33#70#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

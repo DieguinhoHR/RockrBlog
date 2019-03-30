@@ -1,8 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Rockr Blog
 
-## Available Scripts
+## Backend
 
-In the project directory, you can run:
+Para rodar o projeto, basta rodar o seguinte comando abaixo:
+
+```
+docker-compose up
+```
+
+Obs: o servidor vai rodar na porta 81, e mysql na 3307
 
 ### `npm start`
 
