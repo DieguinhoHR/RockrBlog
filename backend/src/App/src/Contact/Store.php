@@ -30,6 +30,7 @@ class Store implements MiddlewareInterface
 
         $content = [
             'id' => $this->tableGateway->getLastInsertValue(),
+            'email' => $data['email']
         ];
 
         return new JsonResponse($content, self::CREATED);

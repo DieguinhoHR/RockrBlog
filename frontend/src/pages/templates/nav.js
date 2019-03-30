@@ -5,58 +5,8 @@ import AppBar from '@material-ui/core/AppBar'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import { Link } from 'react-router-dom'
-import MuiDialogTitle from '@material-ui/core/DialogTitle'
-import MuiDialogContent from '@material-ui/core/DialogContent'
-import MuiDialogActions from '@material-ui/core/DialogActions'
-import IconButton from '@material-ui/core/IconButton'
-import CloseIcon from '@material-ui/icons/Close'
-
 import Tooltip from '@material-ui/core/Tooltip'
-// import Contact from '../contact/contact'
-
-import Dialog from '@material-ui/core/Dialog'
-import Button from '@material-ui/core/Button'
-
-const DialogTitle = withStyles(theme => ({
-  root: {
-    borderBottom: `1px solid ${theme.palette.divider}`,
-    margin: 0,
-    padding: theme.spacing.unit * 2
-  },
-  closeButton: {
-    position: 'absolute',
-    right: theme.spacing.unit,
-    top: theme.spacing.unit,
-    color: theme.palette.grey[500]
-  }
-}))(props => {
-  const { children, classes, onClose } = props
-  return (
-    <MuiDialogTitle disableTypography className={classes.root}>
-      <Typography variant='h6'>{children}</Typography>
-      {onClose ? (
-        <IconButton aria-label='Close' className={classes.closeButton} onClick={onClose}>
-          <CloseIcon />
-        </IconButton>
-      ) : null}
-    </MuiDialogTitle>
-  )
-})
-
-const DialogContent = withStyles(theme => ({
-  root: {
-    margin: 0,
-    padding: theme.spacing.unit * 2
-  }
-}))(MuiDialogContent)
-
-const DialogActions = withStyles(theme => ({
-  root: {
-    borderTop: `1px solid ${theme.palette.divider}`,
-    margin: 0,
-    padding: theme.spacing.unit
-  }
-}))(MuiDialogActions)
+import Contact from '../contact/contact'
 
 const styles = {
   root: {
@@ -117,6 +67,8 @@ class Nav extends React.Component {
     this.setState({
       open: true
     })
+
+    console.log(this.state)
   }
 
   handleClose = () => {
@@ -145,41 +97,7 @@ class Nav extends React.Component {
                 </Tooltip>
               </Grid>
               <Grid item xs={4} style={contactLink}>
-                <Tooltip title='Clique para inserir um novo contato' placement='bottom'>
-                  <Link to='/' style={{ color: 'white', textDecoration: 'none' }} onClick={this.handleClickOpen}>
-                    Contact
-                  </Link>
-                </Tooltip>
-                <Dialog
-                  onClose={this.handleClose}
-                  aria-labelledby='customized-dialog-title'
-                  open={this.state.open}
-                >
-                  <DialogTitle id='customized-dialog-title' onClose={this.handleClose}>
-                    Contact
-                  </DialogTitle>
-                  <DialogContent>
-                    <Typography gutterBottom>
-                      Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
-                      facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum
-                      at eros.
-                    </Typography>
-                    <Typography gutterBottom>
-                      Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
-                      lacus vel augue laoreet rutrum faucibus dolor auctor.
-                    </Typography>
-                    <Typography gutterBottom>
-                      Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
-                      scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
-                      auctor fringilla.
-                    </Typography>
-                  </DialogContent>
-                  <DialogActions>
-                    <Button onClick={this.handleClose} color='primary'>
-                      Save changes
-                    </Button>
-                  </DialogActions>
-                </Dialog>
+                <Contact />
               </Grid>
             </Grid>
           </Typography>

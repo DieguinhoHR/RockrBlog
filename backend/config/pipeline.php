@@ -58,14 +58,13 @@ return function (Application $app, MiddlewareFactory $factory, ContainerInterfac
     // after the Implicit*Middleware.
     $app->pipe(ImplicitHeadMiddleware::class);
     // $app->pipe(ImplicitOptionsMiddleware::class);
-    //$app->pipe(CorsMiddleware::class);
     $app->pipe(new CorsMiddleware([
         "origin" => ["*"],
-        "methods" => function($request) {
-            $result = $request->getAttribute(RouteResult::class);
-            $route = $result->getMatchedRoute();
-            return $route->getAllowedMethods();
-        }
+        "methods" => ["GET", "POST", "PUT", "PATCH", "DELETE"],
+        "headers.allow" => ["Content-Type", "Accept"],
+        "headers.expose" => [],
+        "credentials" => false,
+        "cache" => 0,
     ]));
     $app->pipe(MethodNotAllowedMiddleware::class);
 
