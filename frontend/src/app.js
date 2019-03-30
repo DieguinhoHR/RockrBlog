@@ -5,7 +5,6 @@ import {
   Switch
 } from 'react-router-dom'
 import { MainPage } from 'pages/main'
-import { Contact } from 'pages/contact'
 import { Post } from 'pages/post'
 
 import { CssBaseline } from '@material-ui/core'
@@ -19,7 +18,7 @@ function App () {
           <Nav />
           <Switch>
             <Route path='/' component={MainPage} exact />
-            <Route path='/contact' component={Contact} />
+            <Route path='/contact' component={Post} />
             <Route path='/post/:post_id' component={Post} />
           </Switch>
         </BrowserRouter>
